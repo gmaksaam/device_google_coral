@@ -125,3 +125,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_ENFORCE_PRODUCT_PARTITION_INTERFACE := true
 
+# Camera
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.camera.extensions.package=com.google.android.apps.camera.services \
+    ro.vendor.camera.extensions.service=com.google.android.apps.camera.services.extensions.service.PixelExtensions
