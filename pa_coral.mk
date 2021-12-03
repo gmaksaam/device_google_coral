@@ -2,7 +2,9 @@
 $(call inherit-product, vendor/pa/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_coral.mk)
-
+# Inherit vendor configuration
+$(call inherit-product, vendor/google/coral/coral-vendor.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4 XL
